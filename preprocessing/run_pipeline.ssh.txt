@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Exit immediately if a command fails
+set -e
+
+echo "[STEP 1] Running hadm_to_icu_map.py..."
+python hadm_to_icu_map.py
+echo "[DONE] hadm_to_icu_map.py finished."
+
+echo "[STEP 2] Running static_extract.py..."
+python static_extract.py
+echo "[DONE] static_extract.py finished."
+
+echo "[STEP 3] Running raw_cleaning_script.py..."
+python raw_cleaning_script.py
+echo "[DONE] raw_cleaning_script.py finished."
+
+echo "[STEP 4] Running merge_final_demographics_to_pickle.py..."
+python merge_final_demographics_to_pickle.py
+echo "[DONE] merge_final_demographics_to_pickle.py finished."
+
+echo "✅ All scripts executed successfully."
