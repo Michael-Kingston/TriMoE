@@ -8,14 +8,14 @@ Then you have to run the Harutyunyan et al (2017) 48 hour in hospital mortality 
 
 https://github.com/YerevaNN/mimic3-benchmarks
 
-Following that you must run the Khadanga et al (2019) T0 file, available here:
+Following that, you must run the Khadanga et al (2019) T0 file, available here:
 
 https://github.com/kaggarwal/ClinicalNotesICU
 
-Finally run the preprocessing file used by Han et al (2024) (developed by Zhang et al (2023):
+Finally, run the preprocessing file used by Han et al (2024) (developed by Zhang et al (2023):
 
 https://github.com/aaronhan223/FuseMoE/tree/main/src/preprocessing
 
 Now you can run the preprocessing script stored in this paper by downloading the preprocessing file in this repository and running run_pipeline.ssh
 
-Following that, you can run the model - the Slurm script offers a way to adjust the hyperparameters. Set to the exact same values as stored in hyperparamter.png in this file, or the file in the appendix.
+Following that, you will be able to run the model. The slurm script offers a way to adjust the hyperparameters. Set to the exact same values as stored in hyperparamter.png in this repo, or the copy from the papers appendix to recreate the paper's results.
